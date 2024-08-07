@@ -16,6 +16,8 @@ def transform_data(es_data: Dict) -> Dict:
 
 MONGO_URI = "mongodb+srv://superuser:publ!cp@ssword@gg-is-awesome-gg273.mongodb.net/test?retryWrites=true&w=majority"
 
+MONGO_URI_OTHER = "mongodb+srv://root:generic@gg-is-awesome-gg273.mongodb.net/test?retryWrites=true&w=majority"
+
 def pull_data_from_mongo(query: Dict):
     return pymongo.connect(MONGO_URI).fetch(query)
 
